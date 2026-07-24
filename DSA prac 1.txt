@@ -1,0 +1,32 @@
+Practical 1(1):
+
+Problem:
+If I do not use cin.ignore() after cin >> n, the newline character (Enter) remains in the input buffer. Then the first getline() reads this newline instead of the actual item name, so the first item becomes empty.
+
+Solution:
+Use cin.ignore() after cin >> n to remove the leftover newline character. After that, getline() reads the item names correctly.
+
+
+
+
+
+Practical 1(2):
+
+Problem:
+The same Book ID may be printed more than once if the program checks duplicates directly from the array.
+
+Solution:
+Store the frequency of each Book ID in an unordered_map. Since each Book ID is stored only once as a key, every duplicate is printed only once.
+
+
+
+
+
+Practical 1(3):
+
+Problem:
+After finding a space, I forgot to reset currentword, the next word is added to the previous word. As a result, the program cannot find the correct longest word.
+
+Solution:
+After comparing the current word with the longest word, set: currentword="";
+This clears the previous word and starts storing the next word correctly.
