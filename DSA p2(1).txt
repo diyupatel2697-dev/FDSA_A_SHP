@@ -1,0 +1,26 @@
+Practical 2(1):
+
+Problem:
+The first and second inputs were taken together because of the input buffer.
+
+Solution:
+I used cin.ignore() to clear the input buffer before taking the next input.
+
+Practical 2(2):
+
+Problem:
+I used the break statement in every if condition in the iterative binary search.
+
+Solution: Use break only when the book is found. If the book is not found, update start or end and continue the loop.
+
+Problem:
+I did not update the mid value after each loop in both the iterative and recursive binary search.
+
+Solution: 
+After changing start or end, calculate the new mid before checking the next element.
+
+Problem:
+After finding the book in the iterative binary search, I forgot to use the break statement. This caused the loop to keep running.
+
+Solution: 
+Use break immediately after the book is found to stop the loop.
